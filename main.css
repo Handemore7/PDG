@@ -4,7 +4,7 @@
   border: 0;
   font-size: 100%;
   box-sizing: border-box;
-  font-family: "Sen", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body, html {
@@ -28,13 +28,9 @@ body, html {
   position: absolute;
 }
 .landingPage__logo {
-  width: 30vw;
-  height: 30vw;
-  background-color: #FFFFFF;
   position: absolute;
-  border-radius: 50%;
   top: 50%;
-  margin-top: -30vh;
+  margin-top: -35vh;
   margin-left: 5vw;
 }
 .landingPage__content {
@@ -50,6 +46,8 @@ body, html {
   width: 100%;
   font-size: 4rem;
   color: #FFD608;
+  letter-spacing: 10px;
+  font-style: italic;
 }
 .landingPage__content__text {
   font-size: 1rem;
@@ -120,6 +118,27 @@ body, html {
   margin-top: 5vh;
 }
 
+.bloor2 {
+  position: absolute;
+  width: 50vw;
+  left: 100vw;
+  transform: translate(-51.25vw, -54vh);
+  z-index: 10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30vw 0;
+     object-position: 30vw 0;
+}
+
+.bloor3 {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  transform: translate(-15vw, 40vh);
+  z-index: 10;
+}
+
 .DTexplanation {
   background-color: #0B5D6B;
   height: 30vh;
@@ -161,6 +180,7 @@ body, html {
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .contact__content {
   height: 20vh;
@@ -216,6 +236,7 @@ body, html {
   background-color: #0B5D6B;
   position: absolute;
   bottom: 0px;
+  z-index: 20;
 }
 .contact__finalInfo p {
   margin-top: 2vh;

@@ -15,7 +15,7 @@ $f-blue-dark-bold: #003139;
     border: 0;
     font-size: 100%;
     box-sizing: border-box;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -40,13 +40,9 @@ body, html {
         position: absolute;
     }
     &__logo{
-        width: 30vw;
-        height: 30vw;
-        background-color: $f-white;
         position: absolute;
-        border-radius: 50%;
         top: 50%;
-        margin-top: -30vh;
+        margin-top: -35vh;
         margin-left: 5vw;
     }
     &__content{
@@ -62,6 +58,9 @@ body, html {
             width: 100%;
             font-size: 4rem;
             color: $f-yellow;
+            letter-spacing: 10px;
+            font-style: italic;
+            
         }
         &__text{
             font-size: 1rem;
@@ -140,6 +139,24 @@ body, html {
     }
 }
 
+.bloor2{
+    position: absolute;
+    width: 50vw;
+    left: 100vw;
+    transform: translate(-51.25vw, -54vh);
+    z-index: 10;
+    object-fit: cover;
+    object-position: 30vw 0;
+}
+.bloor3{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 0;
+    transform: translate(-15vw, 40vh);
+    z-index: 10;
+}
+
 .DTexplanation{
     background-color: $c-blue-dark;
     height: 30vh;
@@ -183,6 +200,7 @@ body, html {
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 
     &__content{
         height: 20vh;
@@ -248,6 +266,7 @@ body, html {
         background-color: $c-blue-dark;
         position: absolute;
         bottom: 0px;
+        z-index: 20;
 
         & p{
             margin-top: 2vh;
