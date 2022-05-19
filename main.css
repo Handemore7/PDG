@@ -421,4 +421,45 @@ body, html {
 }
 .form1__dropdown__content span:hover {
   background-color: #f1f1f1;
+}
+.form1__button {
+  margin-top: 5vh;
+  border: 2px solid #003139;
+  padding: 10px 40px;
+  color: #003139;
+  border-radius: 10px;
+  cursor: pointer;
+  right: 100px;
+  position: absolute;
+}
+.form1__button__back {
+  right: 250px;
+}
+.form1__continue {
+  padding-left: 2vw;
+}
+
+.form3__advice {
+  padding-left: 12vw;
+  display: inline;
+}
+.form3__brief {
+  border: 2px solid black;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10vh;
+  width: 80%;
+  position: relative;
+  z-index: 1000;
+}
+.form3__brief__canvas {
+  padding: 100px;
+}
+.form3__brief__canvas__title {
+  color: #003139;
+  font-size: 2rem;
+  border-bottom: 2px solid #003139;
+}
+.form3__brief__canvas__data {
+  margin: 20px 0 20px 0;
 }/*# sourceMappingURL=main.css.map */

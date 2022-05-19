@@ -490,5 +490,61 @@ body, html {
             }
         }
     }
+    &__button{
+        margin-top: 5vh;
+        border: 2px solid $bg-green-darker;
+        padding: 10px 40px;
+        color: $bg-green-darker;
+        border-radius: 10px;
+        cursor: pointer;
+        right: 100px;
+        position: absolute;
+
+        &__back{
+            right: 250px; 
+        }
+    }
+    &__continue{
+        padding-left: 2vw;
+    }
+}
+
+// Form 3
+
+.form3{
+
+    &__advice{
+        padding-left: 12vw;
+        display: inline;
+    }
+    
+    &__brief{
+
+        border: 2px solid black;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10vh;
+        width: 80%;
+        position: relative;
+        z-index: 1000;
+
+        &__canvas{
+            padding: 100px;
+
+            &__title{
+                color: $bg-green-darker;
+                font-size: 2rem;
+                border-bottom: 2px solid $bg-green-darker;
+            }
+
+            &__data{
+                margin: 20px 0 20px 0;
+
+                &--1{
+                }
+            }
+        }
+
+    }
 
 }
