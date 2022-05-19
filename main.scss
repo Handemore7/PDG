@@ -513,6 +513,15 @@ body, html {
 
 .form3{
 
+    &__list{
+
+        & input{
+            display: block;
+            & span{
+            }
+        }
+    }
+
     &__advice{
         padding-left: 12vw;
         display: inline;
@@ -545,6 +554,66 @@ body, html {
             }
         }
 
+    }
+
+}
+
+.businessModel{
+    margin-top: 10vh;
+
+
+    &__title{
+        width: 100%;
+        font-size: 2rem;
+        color: $bg-green-darker;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    &__content{
+        width: 60%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+
+
+        &__main{
+            border: 1px solid $bg-green-light;
+            width: 50%;
+            padding: 20px 40px;
+
+            &__info{
+
+                &__month{
+
+                }
+                &__description{
+                    
+                }
+                &__button{
+                    width: 80%;
+                    padding: 5px;
+                    border-radius: 10px;
+                    border: 2px solid $bg-green-darker;
+                    color: $f-blue-dark-bold;
+                    margin: 15px 25px;
+                }
+                &__listItem{
+                    display: inline-flex;
+                    align-content: center;
+                    justify-content: center;
+
+                    & div{
+                        margin: 10px 0;
+                        background-color: $f-yellow;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+
+                }
+            }
+        }
     }
 
 }
