@@ -181,6 +181,30 @@ body, html {
 
 .DTchart {
   background-color: #FFFFFF;
+  padding-top: 20vh;
+}
+.DTchart__list {
+  position: absolute;
+  top: 30vh;
+  right: 5vw;
+  z-index: 10;
+}
+.DTchart__list__option {
+  margin: 0 55px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003139;
+  cursor: pointer;
+}
+.DTchart__list__option--selected {
+  color: #FFD608;
+  border-bottom: 2px solid #FFD608;
+}
+.DTchart img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-45%);
+  z-index: 5;
 }
 
 .contact {
@@ -439,8 +463,12 @@ body, html {
   padding-left: 2vw;
 }
 
-.form3__list input {
+.form3__list__option {
   display: block;
+  margin-top: 10px;
+}
+.form3__list input {
+  display: inline-block;
 }
 .form3__advice {
   padding-left: 12vw;

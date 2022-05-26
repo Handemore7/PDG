@@ -205,6 +205,35 @@ body, html {
 
 .DTchart{
     background-color: $f-white;
+    padding-top: 20vh;
+
+    &__list{
+        position: absolute;
+        top: 30vh;
+        right: 5vw;
+        z-index: 10;
+
+        &__option{
+            margin: 0 55px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $f-blue-dark-bold;
+            cursor: pointer;
+
+            &--selected{
+                color: $f-yellow;
+                border-bottom: 2px solid $f-yellow;
+            }
+        }
+    }
+
+
+    & img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-45%);
+        z-index: 5;
+    }
 }
 
 .contact{
@@ -515,10 +544,13 @@ body, html {
 
     &__list{
 
-        & input{
+        &__option{
             display: block;
-            & span{
-            }
+            margin-top: 10px;
+        }
+
+        & input{
+            display: inline-block;        
         }
     }
 
