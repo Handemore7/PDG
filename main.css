@@ -67,6 +67,7 @@ body, html {
   transform: translateX(-100%);
   margin-top: 5vh;
   border: 2px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .benefitScreen {
@@ -315,7 +316,7 @@ body, html {
 .Bloor5 {
   position: absolute;
   bottom: 0vw;
-  transform: translate(-27vw, 50vh);
+  transform: translate(-35vw, 50vh);
   z-index: 0;
 }
 
@@ -363,6 +364,18 @@ body, html {
   margin-left: 1vw;
   margin-top: 1vh;
 }
+.info__numberStep span {
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 5rem;
+  color: #14A699;
+  background-color: white;
+  border-radius: 50%;
+}
 .info__content {
   width: 75%;
   margin-left: 3vw;
@@ -381,8 +394,12 @@ body, html {
   width: 65%;
   margin: auto;
 }
+.form1__Questions {
+  margin-top: 50px;
+}
 .form1__header {
   display: inline-flex;
+  margin-top: 20px;
 }
 .form1__header div {
   width: 20px;
@@ -394,16 +411,29 @@ body, html {
 .form1__header span {
   margin-left: 1vw;
 }
+.form1__answer--value {
+  display: block;
+  border-bottom: 1px solid #003139;
+  width: 50vw;
+  height: 5vh;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+}
 .form1__answer span {
-  margin-left: 5vh;
+  margin-left: 2vh;
 }
 .form1__answer input {
   display: block;
   width: 85%;
-  margin: auto;
   border-bottom: 1px solid #0B5D6B;
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+.form1__answer input--checkbox {
+  display: inline;
+  width: 10%;
+  position: relative;
+  z-index: 10000;
 }
 .form1__answer input:enabled {
   outline: none;

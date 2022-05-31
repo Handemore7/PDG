@@ -81,6 +81,7 @@ body, html {
             transform: translateX(-100%);
             margin-top: 5vh;
             border: 2px solid $f-white;
+            cursor: pointer;
         }
     }
     
@@ -360,7 +361,7 @@ body, html {
 .Bloor5{
     position: absolute;
     bottom: 0vw;
-    transform: translate(-27vw, 50vh);
+    transform: translate(-35vw, 50vh);
     z-index: 0;
 }
 
@@ -412,6 +413,19 @@ body, html {
         background-color: $f-yellow;
         margin-left: 1vw;
         margin-top: 1vh;
+
+        & span{
+            display: block;
+            width: 90%;
+            height: 90%;
+            margin-left: 5%;
+            margin-top: 5%;
+            text-align: center;
+            font-size: 5rem;
+            color: $f-blue-light;
+            background-color: white;
+            border-radius: 50%;
+        }
     }
 
     &__content{
@@ -436,11 +450,12 @@ body, html {
     margin: auto;
 
     &__Questions{
-
+            margin-top: 50px;
     }
 
     &__header{
         display: inline-flex;
+        margin-top: 20px;
 
         & div{
             width: 20px;
@@ -456,19 +471,34 @@ body, html {
     }
 
     &__answer{
-
+        
+        &--value{
+            display: block;
+            border-bottom: 1px solid $f-blue-dark-bold;
+            width: 50vw;
+            height: 5vh;
+            margin-bottom: 3vh;
+            margin-top: 2vh;
+        }
+        
         & span{
-            margin-left: 5vh;
+            margin-left: 2vh;
         }
 
         & input{
             display: block;
             width: 85%;
-            margin: auto;
             border-bottom: 1px solid $c-blue-dark;
             margin-top: 2vh;
             margin-bottom: 2vh;
             
+            &--checkbox{
+                display: inline;
+                width: 10%;
+                position: relative;
+              z-index: 10000;
+            }
+
             &:enabled{
                 outline: none;
             }
