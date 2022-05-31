@@ -12,14 +12,16 @@ var herramientas = document.querySelector('#herramientas');
 
 
 window.onload = () => {
+    let randomNum = Math.floor(Math.random() * 6)+1;
+    let randomVal = Math.floor(Math.random() * 3000000)+1;
+
     fecha.innerHTML = '26/05/2022';
-    presupuesto.innerHTML = `${Math.floor(Math.random() * 3000000)+1} `;
-    tiempo.innerHTML = `${Math.floor(Math.random() * 6)+1} Meses`;
+    presupuesto.innerHTML = `${randomVal} `;
+    tiempo.innerHTML = `${randomNum} Meses`;
     proyecto.innerHTML = '01';
-    descripcion.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit accusantium nisi deserunt cupiditate repellendus magnam illo! Ipsa fuga vero deleniti minima. Eos nam quod ea similique eligendi iure delectus.';
-    etapa.innerHTML = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa consectetur iste architecto odit quis voluptas doloremque odio nulla, tenetur totam neque cumque? Obcaecati cumque, at accusantium excepturi error magnam beatae.';
-    metodologia.innerHTML = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore provident tempore veritatis quo quaerat, rem nisi quod voluptatem, aliquid id eveniet expedita saepe dolor aperiam odit distinctio cum eligendi impedit.';
-    herramientas.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio ad sit voluptatibus temporibus. Placeat ducimus molestias veniam similique, totam debitis minus neque asperiores velit alias? Dolore ipsa aliquid ullam?';
+    descripcion.innerHTML = `Proyecto de tipo economico, con ${randomNum} meses de tiempo esperado, se estima aproximadamente un gasto de ${randomVal}`;
+    etapa.innerHTML = `Actualmente se encuentra en una etapa de Ideación, a partir de aqui debe seguir el ciclo, continuando con prototipar -> testear -> implementar, y volver a iterar todo el proceso desde la primera etapa.`;
+    metodologia.innerHTML = `Cada etapa tendrá una duración de 1 sprint, el cual constará de 10 días, teniendo en 3 meses un total de 9 sprints, por lo cual teniendo en cuenta que se empieza en la etapa de Ideación, se espera en 3 meses haber pasado por todas las etapas y terminar en la segunda iteración de la etapa de implementación`;
 }
 
 
@@ -62,3 +64,4 @@ opt3.addEventListener('click', () => {
         opt2.classList.toggle('DTchart__list__option--selected');
     }
 });
+
