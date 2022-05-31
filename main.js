@@ -24,9 +24,6 @@ window.onload = () => {
     metodologia.innerHTML = `Cada etapa tendrá una duración de 1 sprint, el cual constará de 10 días, teniendo en 3 meses un total de 9 sprints, por lo cual teniendo en cuenta que se empieza en la etapa de Ideación, se espera en 3 meses haber pasado por todas las etapas y terminar en la segunda iteración de la etapa de implementación`;
 }
 
-
-
-
 // A partir de aqui es lo del "slider"
 
 var opt1 = document.querySelector('#option1');
