@@ -9,56 +9,57 @@ var herramientas = document.querySelector('#herramientas');
 
 
 
-
+var randomNum = Math.floor(Math.random() * 6)+1;
+var randomVal = Math.floor(Math.random() * 3000000)+1;
+var randominitialVal = randomVal;
 
 window.onload = () => {
-    let randomNum = Math.floor(Math.random() * 6)+1;
-    let randomVal = Math.floor(Math.random() * 3000000)+1;
 
-    fecha.innerHTML = '26/05/2022';
-    presupuesto.innerHTML = `${randomVal} `;
+    renderizeData();
+}
+
+function renderizeData(params) {
+    fecha.innerHTML = '31/05/2022';
+    presupuesto.innerHTML = `${(randomVal*(randomNum))} `;
     tiempo.innerHTML = `${randomNum} Meses`;
     proyecto.innerHTML = '01';
-    descripcion.innerHTML = `Proyecto de tipo economico, con ${randomNum} meses de tiempo esperado, se estima aproximadamente un gasto de ${randomVal}`;
+    descripcion.innerHTML = `Proyecto de tipo economico, con ${randomNum} meses de tiempo esperado, se estima aproximadamente un gasto de ${plus? (randomVal*(randomNum)): (randomVal*(randomNum))}`;
     etapa.innerHTML = `Actualmente se encuentra en una etapa de Ideación, a partir de aqui debe seguir el ciclo, continuando con prototipar -> testear -> implementar, y volver a iterar todo el proceso desde la primera etapa.`;
     metodologia.innerHTML = `Cada etapa tendrá una duración de 1 sprint, el cual constará de 10 días, teniendo en 3 meses un total de 9 sprints, por lo cual teniendo en cuenta que se empieza en la etapa de Ideación, se espera en 3 meses haber pasado por todas las etapas y terminar en la segunda iteración de la etapa de implementación`;
 }
 
-// A partir de aqui es lo del "slider"
+//No s[e]
 
-var opt1 = document.querySelector('#option1');
-var opt2 = document.querySelector('#option2');
-var opt3 = document.querySelector('#option3');
-var img = document.querySelector('#sliderImg');
+var aumentar = document.querySelector('#aumentar');
+var disminuir = document.querySelector('#disminuir');
+var iteracion = 2;
+var plus = false;
 
-opt1.addEventListener('click', () => {
-    img.setAttribute("src","./src/slide1.png");
-    opt1.classList.toggle('DTchart__list__option--selected');
-    if (opt2.classList.contains("DTchart__list__option--selected")) {
-        opt2.classList.toggle('DTchart__list__option--selected');
-    }
-    if (opt3.classList.contains("DTchart__list__option--selected")) {
-        opt3.classList.toggle('DTchart__list__option--selected');
-    }
-});
-opt2.addEventListener('click', () => {
-    img.setAttribute("src","./src/slide2.png");
-    opt2.classList.toggle('DTchart__list__option--selected');
-    if (opt1.classList.contains("DTchart__list__option--selected")) {
-        opt1.classList.toggle('DTchart__list__option--selected');
-    }
-    if (opt3.classList.contains("DTchart__list__option--selected")) {
-        opt3.classList.toggle('DTchart__list__option--selected');
-    }
-});
-opt3.addEventListener('click', () => {
-    img.setAttribute("src","./src/slide3.png");
-    opt3.classList.toggle('DTchart__list__option--selected');
-    if (opt1.classList.contains("DTchart__list__option--selected")) {
-        opt1.classList.toggle('DTchart__list__option--selected');
-    }
-    if (opt2.classList.contains("DTchart__list__option--selected")) {
-        opt2.classList.toggle('DTchart__list__option--selected');
-    }
+aumentar.addEventListener('click', () => {
+    iteracion++;
+    randomNum++;
+    plus = true;
+    renderizeData(plus);
+    console.log(randomNum);
 });
 
+disminuir.addEventListener('click', () => {
+    if (randomNum <= 0) {
+        randomNum = 0;
+        fecha.innerHTML = '31/05/2022';
+        presupuesto.innerHTML = `${(randomVal*(randomNum))} `;
+        tiempo.innerHTML = `${randomNum} Meses`;
+        proyecto.innerHTML = '01';
+        descripcion.innerHTML = ``;
+        etapa.innerHTML = ``;
+        metodologia.innerHTML = ``;
+        herramientas.innerHTML = ``;
+    } else{
+
+        iteracion++;
+        randomNum--;
+        plus = false;
+        renderizeData(plus);
+        console.log(randomNum);
+    }
+});

@@ -597,10 +597,12 @@ body, html {
         margin-top: 10vh;
         width: 80%;
         position: relative;
-        z-index: 1000;
+        z-index: 10000;
+        background-color: white;
 
         &__canvas{
             padding: 100px;
+            
 
             &__title{
                 color: $bg-green-darker;
@@ -768,4 +770,11 @@ body, html {
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.aaa {
+    border: 2px solid $bg-green-light;
+    background-color: white;
+    color: $bg-green-darker;
+    padding: 5px 10px;
 }
