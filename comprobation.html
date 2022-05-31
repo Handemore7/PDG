@@ -28,7 +28,7 @@
         </section>
         <section class="info">
             <div class="info__numberStep">
-
+                <span>2</span>
             </div>
             <div class="info__content">
                 <span><strong>Sube el PDF</strong></span>
@@ -41,8 +41,8 @@
                     <div></div>
                     <span><strong>¿Cómo te sentiste al obtener el brief?</strong></span>
                 </div>
-                <div class="form1__answer">
-                    <span>Seguro</span>
+                <div id="asd" class="form1__answer">
+                    <span >Inseguro ------------------------------------------------------------------------------------------------------- Seguro</span>
                     <input type="range" >
                 </div>                
             </div>
@@ -52,8 +52,8 @@
                     <span><strong>¿Se cumplió lo establecido en el brief?</strong></span>
                 </div>
                 <div class="form1__dropdown">
-                    <button>Si</button>
-                    <button>No</button>
+                    <label><input type="checkbox" name="" id=""> Si</label>
+                    <label><input type="checkbox" name="" id=""> No</label>
                 </div>
             </div>
             <div class="form1_Questions form1__Q3">
@@ -62,7 +62,7 @@
                     <span><strong>¿Cuánto se demoraron realizando el proyecto?</strong></span>
                 </div>
                 <div class="form1__dropdown">
-                    <input type="number"  style="border: 1px solid black;">
+                    <input type="number"  id="asdf">
                     <span> Meses</span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <span><strong>¿Cuánto dinero se invirtió en el proyecto?</strong></span>
                 </div>
                 <div class="form1__dropdown">
-                    <input type="number" style="border: 1px solid black;">
+                    <input type="number" id="asdfe">
                     <span> Pesos</span>
                 </div>
             </div>
@@ -82,11 +82,19 @@
                     <span><strong>¿Cuales herramientas utilizaron?</strong></span>
                 </div>
                 <div class="form1__dropdown form3__list">
-                    <div class="form3__list__option"><input type="checkbox"><span> Análisis del sistema</span></div>
-                    <div class="form3__list__option"><input type="checkbox"><span> Análisis del sistema</span></div>
-                    <div class="form3__list__option"><input type="checkbox"><span> Análisis del sistema</span></div>
-                    <div class="form3__list__option"><input type="checkbox"><span> Análisis del sistema</span></div>
-                    <div class="form3__list__option"><input type="checkbox"><span> Análisis del sistema</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Todas</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Entrevistas</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> User Journey</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Encuestas</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Service blueprint</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Mapa de empatia</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Storyboard</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Moodboard</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Lluvia de ideas</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Co-Ideación</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Focus group</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Test de usabilidad</span></div>
+                    <div class="form3__list__option"><input type="checkbox"><span> Mosca en la pared</span></div>
                 </div>
             </div>
         </form>
@@ -96,16 +104,17 @@
             <div class="businessModel__content">
                 <div class="businessModel__content__main">
                     <div class="businessModel__content__main__info">
-                        <p class="businessModel__content__main__info__month"><strong>1 MES</strong></p>
-                        <p class="businessModel__content__main__info__description">Permite que QUIRE se adapte completamente a ti</p>
+                        <p class="businessModel__content__main__info__month"><strong>Gratis</strong></p>
+                        <p class="businessModel__content__main__info__description">Permite que QUIRE <br>
+                            este siempre contigo</p>
                         <button class="businessModel__content__main__info__button">Suscribete ya</button>
                         <div class="businessModel__content__main__info__listItem">
                             <div></div>
-                            <p>Biblioteca de Briefs</p>
+                            <p>Briefs ilimitados</p>
                         </div>
                         <div class="businessModel__content__main__info__listItem">
                             <div></div>
-                            <p>Porcentajes de evaluación para tus proyectos</p>
+                            <p>Evalúa tus proyectos</p>
                         </div>
                         <div class="businessModel__content__main__info__listItem">
                             <div></div>
@@ -116,19 +125,24 @@
                 <div class="businessModel__content__main">
                     <div class="businessModel__content__main__info">
                         <p class="businessModel__content__main__info__month"><strong>1 MES</strong></p>
-                        <p class="businessModel__content__main__info__description">Permite que QUIRE se adapte completamente a ti</p>
+                        <p class="businessModel__content__main__info__description">Permite que QUIRE <br>se adapte completamente a ti</p>
                         <button class="businessModel__content__main__info__button">Suscribete ya</button>
                         <div class="businessModel__content__main__info__listItem">
                             <div></div>
-                            <p>Biblioteca de Briefs</p>
+                            <p>Análisis del sistema</p>
                         </div>
                         <div class="businessModel__content__main__info__listItem">
                             <div></div>
-                            <p>Porcentajes de evaluación para tus proyectos</p>
+                            <p>Organiza tus proyectos</p>
                         </div>
                         <div class="businessModel__content__main__info__listItem">
                             <div></div>
-                            <p>Oportunidad de conocer más las herramientas</p>
+                            <p>Complementos privados</p>
+                        </div>
+                        <div class="businessModel__content__main__info__listItem">
+                            <div></div>
+                            <p>Porcentajes de evaluación para 
+                                tus proyectos</p>
                         </div>
                     </div>
                 </div>

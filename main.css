@@ -494,8 +494,8 @@ body, html {
 }
 
 .form3__list__option {
-  display: block;
   margin-top: 10px;
+  width: 100%;
 }
 .form3__list input {
   display: inline-block;
@@ -553,16 +553,32 @@ body, html {
   border: 2px solid #003139;
   color: #003139;
   margin: 15px 25px;
+  cursor: pointer;
 }
 .businessModel__content__main__info__listItem {
+  margin-top: 10px;
+  width: 120%;
   display: inline-flex;
   align-content: center;
-  justify-content: center;
+  justify-content: left;
 }
 .businessModel__content__main__info__listItem div {
-  margin: 10px 0;
   background-color: #FFD608;
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+#asd {
+  margin-top: 2vh;
+}
+
+#asdf {
+  border-bottom: 1px solid black;
+  width: 10%;
+}
+
+#asdfe {
+  border-bottom: 1px solid black;
+  width: 20%;
 }/*# sourceMappingURL=main.css.map */
